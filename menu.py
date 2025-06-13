@@ -1,3 +1,5 @@
+import os
+
 def menu():
     opcion = ''
     while opcion != '4':
@@ -8,7 +10,7 @@ def menu():
         print('4. Salir')
         opcion = input('Seleccione una opción: ')
 
-        # limpiar_consola()
+        os.system('cls')
 
         match opcion:
             case 1:
