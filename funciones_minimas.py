@@ -23,8 +23,12 @@ def obtener_categorias(datos):
 
 
 def seleccionar_palabra(palabras):
-    la_palabra = random.randint(0,len(palabras))
+    la_palabra = palabras[random.randint(0,len(palabras) -1)]
     print(la_palabra)
+
+mama = obtener_lista_palabras(datos,"Historia")
+papa = seleccionar_palabra(mama)
+
 
 def obtener_elemento_aleatorio(lista_elementos:list)->any:
     pass
@@ -47,5 +51,3 @@ def actualizar_palabra_oculta():
 def calcular_puntuacion_final():
     pass
 
-papa = seleccionar_palabra()
-print(papa)
