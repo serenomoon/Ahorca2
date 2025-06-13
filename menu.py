@@ -1,4 +1,5 @@
-import os
+import sys
+from os import system
 
 def menu():
     opcion = ''
@@ -10,7 +11,6 @@ def menu():
         print('4. Salir')
         opcion = input('Seleccione una opción: ')
 
-        os.system('cls')
 
         match opcion:
             case 1:
@@ -22,4 +22,8 @@ def menu():
             case 4:
                 break
 
-menu()
+    system('cls')
+    system('pause')
+
+if __name__ == "__menu__":
+    sys,exit(menu())

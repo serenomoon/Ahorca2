@@ -14,6 +14,7 @@ def seleccionar_categoria(datos: list):
     categoria = lista_categoria[random.randint(0,len(lista_categoria) -1)]
     return categoria
 
+
 def obtener_categorias(datos):
     tematicas = []
     for tematica in datos:
@@ -28,8 +29,6 @@ def seleccionar_palabra(palabras):
 
 
 def mostrar_palabra_oculta(la_palabra):
-    
-    
     palabra_guiones = ""
     
     for i in range(len(la_palabra)):
@@ -41,25 +40,19 @@ def mostrar_palabra_oculta(la_palabra):
                 
     return palabra_guiones 
 
+
 def actualizar_palabra_oculta(la_palabra , letra):
-    
     palabra_semi_oculta = ""
     
     for i in range(len(la_palabra)):
-        
         if la_palabra[i] == letra:
-            palabra_semi_oculta += la_palabra[i]
-            
+            palabra_semi_oculta += la_palabra[i]   
         else:
             palabra_semi_oculta += "_"
             
     return palabra_semi_oculta        
             
-            
-            
-            
-            
-            
+                      
 def obtener_elemento_aleatorio(lista_elementos:list)->any:
     pass
 
@@ -70,29 +63,10 @@ def ingresar_nombre_usuario(mensaje:str, mensaje_error:str, minimo_len:int, maxi
     pass
 
 def verificar_estado_juego(diccionario_juego:dict)->bool:
-    pass
-
-
-        
+    pass  
 
 def calcular_puntuacion_final():
     
     pass
 
-
-
-#######################################################################################################
-
-mama = obtener_lista_palabras(datos,"Historia")
-papa = seleccionar_palabra(mama)
-
-
-hijo = mostrar_palabra_oculta(papa)
-print(hijo)
-print(papa)
-
-while True:
-    poner = input("ltraaaaa = ")
-    hija = actualizar_palabra_oculta(papa, poner)
-    print(hija)
     
